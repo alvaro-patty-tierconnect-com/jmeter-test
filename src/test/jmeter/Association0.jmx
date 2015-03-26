@@ -44,7 +44,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">10.100.0.110</stringProp>
+          <stringProp name="HTTPSampler.domain">qa.riotplatform.com</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -96,6 +96,26 @@
               <stringProp name="Argument.value">PEPSI</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
+            <elementProp name="st1" elementType="Argument">
+              <stringProp name="Argument.name">st1</stringProp>
+              <stringProp name="Argument.value">GRN</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="st2" elementType="Argument">
+              <stringProp name="Argument.name">st2</stringProp>
+              <stringProp name="Argument.value">LTI</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="st3" elementType="Argument">
+              <stringProp name="Argument.name">st3</stringProp>
+              <stringProp name="Argument.value">PRET</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="st4" elementType="Argument">
+              <stringProp name="Argument.name">st4</stringProp>
+              <stringProp name="Argument.value">Sold</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
@@ -115,7 +135,7 @@
   &quot;productDescrip&quot;:&quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz123457890)}&quot;,&#xd;
   &quot;brand&quot;:&quot;${__V(b${__Random(1,4,)})}&quot;,&#xd;
   &quot;serialNUM&quot;:&quot;${aux}${__intSum(${serial},1,serial)}&quot;,&#xd;
-  &quot;status&quot;:&quot;GRN&quot;&#xd;
+  &quot;status&quot;:&quot;${__V(st${__Random(1,4,)})}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
