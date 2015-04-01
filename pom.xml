@@ -26,9 +26,6 @@
                         <startServersBeforeTests>true</startServersBeforeTests>
                     </remoteConfig>
                     <suppressJMeterOutput>false</suppressJMeterOutput>
-                    <propertiesSystem>
-                        <java.rmi.server.hostname>jenkins2.riotplatform.com</java.rmi.server.hostname>
-                    </propertiesSystem>
                     <propertiesGlobal>
                         <!-- supplied by jenkins / sys props -->
                         <users>${env.users}</users>
