@@ -7,15 +7,36 @@
     <version>1.0-SNAPSHOT</version>
     <name>jmeter-demo</name>
     <url>http://maven.apache.org</url>
-
+    <properties>
+        <performancetest.connectTimeout>10000</performancetest.connectTimeout>
+        <performancetest.responseTimeout>30000</performancetest.responseTimeout>
+        <performancetest.threadCount>50</performancetest.threadCount>
+        <performancetest.loopCount>50</performancetest.loopCount>
+    </properties>
     <build>
         <plugins>
             <plugin>
                 <groupId>com.lazerycode.jmeter</groupId>
                 <artifactId>jmeter-maven-plugin</artifactId>
-                <version>1.4.1</version>
+                <version>1.9.0</version>
                 <configuration>
                     <testResultsTimestamp>false</testResultsTimestamp>
+                    <ignoreResultFailures>true</ignoreResultFailures>
+                    <remoteConfig>
+                        <startServersBeforeTests>true</startServersBeforeTests>
+                    </remoteConfig>
+                    <suppressJMeterOutput>false</suppressJMeterOutput>
+                    <propertiesSystem>
+                        <java.rmi.server.hostname>jenkins2.riotplatform.com</java.rmi.server.hostname>
+                    </propertiesSystem>
+                    <propertiesGlobal>
+                        <!-- supplied by jenkins / sys props -->
+                        <users>${env.users}</users>
+                        <iterations>${env.iterations}</iterations>
+                        <timer>${env.timer}</timer>
+                        <domain>${env.domain}</domain>
+                        <ramp-up>${env.ramp-up}</ramp-up>
+                    </propertiesGlobal>
                 </configuration>
                 <executions>
                     <execution>
