@@ -22,9 +22,6 @@
                 <configuration>
                     <testResultsTimestamp>false</testResultsTimestamp>
                     <ignoreResultFailures>true</ignoreResultFailures>
-                    <remoteConfig>
-                        <startServersBeforeTests>true</startServersBeforeTests>
-                    </remoteConfig>
                     <suppressJMeterOutput>false</suppressJMeterOutput>
                     <propertiesGlobal>
                         <!-- supplied by jenkins / sys props -->
