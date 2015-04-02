@@ -62,7 +62,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;facilityCode&quot;: &quot;Sharaf&quot;, &#xd;
-  &quot;thingTypeCode&quot;:&quot;Sharaf.thing&quot;,&#xd;
+  &quot;thingTypeCode&quot;:&quot;Arduino.Day&quot;,&#xd;
   &quot;Timestamp&quot;:&quot;10/100/200&quot;,&#xd;
   &quot;tagID&quot;:&quot;3&quot;,&#xd;
   &quot;itemcode&quot;:&quot;3&quot;,&#xd;
@@ -76,7 +76,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">qa.riotplatform.com</stringProp>
+          <stringProp name="HTTPSampler.domain">one.hackiot.com</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.connect_timeout">90000000</stringProp>
           <stringProp name="HTTPSampler.response_timeout">900000000</stringProp>
