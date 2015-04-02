@@ -76,7 +76,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">one.hackiot.com</stringProp>
+          <stringProp name="HTTPSampler.domain">qa.riotplatform.com</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.connect_timeout">90000000</stringProp>
           <stringProp name="HTTPSampler.response_timeout">900000000</stringProp>
