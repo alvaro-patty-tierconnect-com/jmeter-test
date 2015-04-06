@@ -63,10 +63,10 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;groupType.id&quot;:2,&#xd;
-	&quot;name&quot;:&quot;Coderoad&quot;,&#xd;
+	&quot;name&quot;:&quot;Group Test&quot;,&#xd;
 	&quot;parent.id&quot;:1,&#xd;
-	&quot;code&quot;:&quot;Coderoad&quot;,&#xd;
-	&quot;description&quot;:&quot;Coderoad async&quot;&#xd;
+	&quot;code&quot;:&quot;group.test&quot;,&#xd;
+	&quot;description&quot;:&quot;Group async&quot;&#xd;
 	}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
