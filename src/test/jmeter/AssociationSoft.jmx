@@ -49,7 +49,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;group.id&quot;:2,&#xd;
-	&quot;name&quot;:&quot;Testing Roles&quot;,&#xd;
+	&quot;name&quot;:&quot;Rol ABC&quot;,&#xd;
 	&quot;description&quot;:&quot;jmeter TEST&quot;,&#xd;
 	&quot;groupTypeCeiling.id&quot;:2&#xd;
 }</stringProp>
